@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            LoginTbAccout = new TextBox();
-            LoginTbPassword = new TextBox();
+            TbAccout = new TextBox();
+            TbPassword = new TextBox();
             label2 = new Label();
-            LoginBtnLogin = new Button();
-            LoginBtnRegistered = new Button();
+            BtnLogin = new Button();
+            BtnRegistered = new Button();
             SuspendLayout();
             // 
             // label1
@@ -46,20 +46,20 @@
             label1.TabIndex = 0;
             label1.Text = "账号：";
             // 
-            // LoginTbAccout
+            // TbAccout
             // 
-            LoginTbAccout.Location = new Point(155, 62);
-            LoginTbAccout.Name = "LoginTbAccout";
-            LoginTbAccout.Size = new Size(156, 23);
-            LoginTbAccout.TabIndex = 1;
+            TbAccout.Location = new Point(155, 62);
+            TbAccout.Name = "TbAccout";
+            TbAccout.Size = new Size(156, 23);
+            TbAccout.TabIndex = 1;
             // 
-            // LoginTbPassword
+            // TbPassword
             // 
-            LoginTbPassword.Location = new Point(155, 111);
-            LoginTbPassword.Name = "LoginTbPassword";
-            LoginTbPassword.PasswordChar = '*';
-            LoginTbPassword.Size = new Size(156, 23);
-            LoginTbPassword.TabIndex = 3;
+            TbPassword.Location = new Point(155, 111);
+            TbPassword.Name = "TbPassword";
+            TbPassword.PasswordChar = '*';
+            TbPassword.Size = new Size(156, 23);
+            TbPassword.TabIndex = 3;
             // 
             // label2
             // 
@@ -71,36 +71,36 @@
             label2.TabIndex = 2;
             label2.Text = "密码：";
             // 
-            // LoginBtnLogin
+            // BtnLogin
             // 
-            LoginBtnLogin.Location = new Point(155, 156);
-            LoginBtnLogin.Name = "LoginBtnLogin";
-            LoginBtnLogin.Size = new Size(75, 23);
-            LoginBtnLogin.TabIndex = 4;
-            LoginBtnLogin.Text = "登录";
-            LoginBtnLogin.UseVisualStyleBackColor = true;
-            LoginBtnLogin.Click += LoginBtnLogin_Click;
+            BtnLogin.Location = new Point(155, 156);
+            BtnLogin.Name = "BtnLogin";
+            BtnLogin.Size = new Size(75, 23);
+            BtnLogin.TabIndex = 4;
+            BtnLogin.Text = "登录";
+            BtnLogin.UseVisualStyleBackColor = true;
+            BtnLogin.Click += BtnLogin_Click;
             // 
-            // LoginBtnRegistered
+            // BtnRegistered
             // 
-            LoginBtnRegistered.Location = new Point(236, 156);
-            LoginBtnRegistered.Name = "LoginBtnRegistered";
-            LoginBtnRegistered.Size = new Size(75, 23);
-            LoginBtnRegistered.TabIndex = 5;
-            LoginBtnRegistered.Text = "注册";
-            LoginBtnRegistered.UseVisualStyleBackColor = true;
-            LoginBtnRegistered.Click += LoginBtnRegistered_Click;
+            BtnRegistered.Location = new Point(236, 156);
+            BtnRegistered.Name = "BtnRegistered";
+            BtnRegistered.Size = new Size(75, 23);
+            BtnRegistered.TabIndex = 5;
+            BtnRegistered.Text = "注册";
+            BtnRegistered.UseVisualStyleBackColor = true;
+            BtnRegistered.Click += BtnRegistered_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(419, 227);
-            Controls.Add(LoginBtnRegistered);
-            Controls.Add(LoginBtnLogin);
-            Controls.Add(LoginTbPassword);
+            Controls.Add(BtnRegistered);
+            Controls.Add(BtnLogin);
+            Controls.Add(TbPassword);
             Controls.Add(label2);
-            Controls.Add(LoginTbAccout);
+            Controls.Add(TbAccout);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
@@ -114,12 +114,12 @@
 
         #endregion
 
-        private Label label1;
-        private TextBox LoginTbAccout;
-        private TextBox LoginTbPassword;
-        private Label label2;
-        private Button LoginBtnLogin;
-        private Button LoginBtnRegistered;
+        internal Label label1;
+        internal TextBox TbAccout;
+        internal TextBox TbPassword;
+        internal Label label2;
+        internal Button BtnLogin;
+        internal Button BtnRegistered;
 
     }
 }

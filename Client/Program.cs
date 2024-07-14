@@ -12,6 +12,10 @@ namespace WinFormsCS
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             GP.Instances.login = new Login();
+            GP.Instances.index = new Index();
+            GP.Instances.signUp = new SignUp();
+            GP.Instances.setting = new Setting();
+            GP.Instances.sqlControl = new SqlControl();
             Application.Run(GP.Instances.login);
         }
     }

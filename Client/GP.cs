@@ -12,18 +12,27 @@ namespace WinFormsCS
     /// </summary>
     internal class GP
     {   
-
+        // 界面
         static GP(){}
-        public Login login;
-        public Index index;
-        public SignUp signUp;
-        public Setting setting;
-        public SqlControl sqlControl;
+        internal Login login;
+        internal Index index;
+        internal SignUp signUp;
+        internal Setting setting;
 
-        // 用户信息
-        public string UserName;
-        public byte[] Password;
+        // 界面切换
+        public void FormSwitch(Form form)
+        {
+            this.login.Hide();
+            this.index.Hide();
+            this.signUp.Hide();
+            this.setting.Hide();
+            form.Show();
+        }
+        
+        // 数据库
+        internal SqlControl sqlControl;
 
+        // 单例
         private static GP _Instances;
         public static GP Instances
         {
@@ -36,5 +45,8 @@ namespace WinFormsCS
                 return _Instances;
             }
         }
+
+
+
     }
 }

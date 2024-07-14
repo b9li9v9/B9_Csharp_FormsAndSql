@@ -1,4 +1,5 @@
-﻿namespace WinFormsCS
+﻿using System.Drawing;
+namespace WinFormsCS
 {
     partial class Index
     {
@@ -28,48 +29,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            IndexBtnTest = new Button();
-            IndexLbtest = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
+            BtnTest = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripDropDownButton1 = new ToolStripSplitButton();
+            用户设置ToolStripMenuItem = new ToolStripMenuItem();
+            基础信息ToolStripMenuItem = new ToolStripMenuItem();
+            组织信息ToolStripMenuItem = new ToolStripMenuItem();
+            界面设置ToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // IndexBtnTest
+            // BtnTest
             // 
-            IndexBtnTest.Location = new Point(12, 12);
-            IndexBtnTest.Name = "IndexBtnTest";
-            IndexBtnTest.Size = new Size(72, 63);
-            IndexBtnTest.TabIndex = 0;
-            IndexBtnTest.Text = "用户设置";
-            IndexBtnTest.UseVisualStyleBackColor = true;
-            IndexBtnTest.Click += IndexBtnTest_Click;
+            BtnTest.Location = new Point(716, 375);
+            BtnTest.Name = "BtnTest";
+            BtnTest.Size = new Size(72, 63);
+            BtnTest.TabIndex = 0;
+            BtnTest.Text = "用户设置";
+            BtnTest.UseVisualStyleBackColor = true;
+            BtnTest.Click += IndexBtnTest_Click;
             // 
-            // IndexLbtest
+            // toolStrip1
             // 
-            IndexLbtest.AutoSize = true;
-            IndexLbtest.Location = new Point(353, 218);
-            IndexLbtest.Name = "IndexLbtest";
-            IndexLbtest.Size = new Size(29, 17);
-            IndexLbtest.TabIndex = 1;
-            IndexLbtest.Text = "test";
+            toolStrip1.BackColor = SystemColors.ControlLightLight;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripDropDownButton1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(800, 25);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
+            toolStrip1.MouseDown += toolStrip1_MouseDown;
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.Alignment = ToolStripItemAlignment.Right;
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Transparent;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(23, 22);
+            toolStripButton1.Text = "关闭";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripDropDownButton1
+            // 
+            toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { 用户设置ToolStripMenuItem, 界面设置ToolStripMenuItem });
+            toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            toolStripDropDownButton1.Size = new Size(48, 22);
+            toolStripDropDownButton1.Text = "设置";
+            // 
+            // 用户设置ToolStripMenuItem
+            // 
+            用户设置ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 基础信息ToolStripMenuItem, 组织信息ToolStripMenuItem });
+            用户设置ToolStripMenuItem.Name = "用户设置ToolStripMenuItem";
+            用户设置ToolStripMenuItem.Size = new Size(124, 22);
+            用户设置ToolStripMenuItem.Text = "用户设置";
+            // 
+            // 基础信息ToolStripMenuItem
+            // 
+            基础信息ToolStripMenuItem.Name = "基础信息ToolStripMenuItem";
+            基础信息ToolStripMenuItem.Size = new Size(124, 22);
+            基础信息ToolStripMenuItem.Text = "基础信息";
+            // 
+            // 组织信息ToolStripMenuItem
+            // 
+            组织信息ToolStripMenuItem.Name = "组织信息ToolStripMenuItem";
+            组织信息ToolStripMenuItem.Size = new Size(124, 22);
+            组织信息ToolStripMenuItem.Text = "组织信息";
+            // 
+            // 界面设置ToolStripMenuItem
+            // 
+            界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
+            界面设置ToolStripMenuItem.Size = new Size(124, 22);
+            界面设置ToolStripMenuItem.Text = "界面设置";
             // 
             // Index
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(IndexLbtest);
-            Controls.Add(IndexBtnTest);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Controls.Add(toolStrip1);
+            Controls.Add(BtnTest);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Index";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "hi, ";
             FormClosing += Index_FormClosing;
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button IndexBtnTest;
-        private Label IndexLbtest;
+        private Button BtnTest;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripSplitButton toolStripDropDownButton1;
+        private ToolStripMenuItem 用户设置ToolStripMenuItem;
+        private ToolStripMenuItem 基础信息ToolStripMenuItem;
+        private ToolStripMenuItem 组织信息ToolStripMenuItem;
+        private ToolStripMenuItem 界面设置ToolStripMenuItem;
+
+
     }
 }
