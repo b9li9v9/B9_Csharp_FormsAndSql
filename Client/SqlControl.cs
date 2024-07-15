@@ -24,9 +24,9 @@ namespace WinFormsCS
     /// Birthday date
     /// Organization nvarchar(50)
     /// 
+    /// ---
     /// 
     /// 
-    /// .
     /// 
     /// 其实数据库最好全是字符类型 更通用 要使用在代码里动态去改
     /// 主键种子从1000开始  保留数字判断空值 
