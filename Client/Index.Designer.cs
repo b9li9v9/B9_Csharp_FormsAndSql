@@ -30,26 +30,15 @@ namespace WinFormsCS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
-            BtnTest = new Button();
             toolStrip1 = new ToolStrip();
             toolStripButton1 = new ToolStripButton();
             toolStripDropDownButton1 = new ToolStripSplitButton();
             用户设置ToolStripMenuItem = new ToolStripMenuItem();
-            基础信息ToolStripMenuItem = new ToolStripMenuItem();
+            TsmSettingUserBasic = new ToolStripMenuItem();
             组织信息ToolStripMenuItem = new ToolStripMenuItem();
             界面设置ToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // BtnTest
-            // 
-            BtnTest.Location = new Point(716, 375);
-            BtnTest.Name = "BtnTest";
-            BtnTest.Size = new Size(72, 63);
-            BtnTest.TabIndex = 0;
-            BtnTest.Text = "用户设置";
-            BtnTest.UseVisualStyleBackColor = true;
-            BtnTest.Click += IndexBtnTest_Click;
             // 
             // toolStrip1
             // 
@@ -82,27 +71,28 @@ namespace WinFormsCS
             // 
             // 用户设置ToolStripMenuItem
             // 
-            用户设置ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 基础信息ToolStripMenuItem, 组织信息ToolStripMenuItem });
+            用户设置ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmSettingUserBasic, 组织信息ToolStripMenuItem });
             用户设置ToolStripMenuItem.Name = "用户设置ToolStripMenuItem";
-            用户设置ToolStripMenuItem.Size = new Size(124, 22);
+            用户设置ToolStripMenuItem.Size = new Size(180, 22);
             用户设置ToolStripMenuItem.Text = "用户设置";
             // 
-            // 基础信息ToolStripMenuItem
+            // TsmSettingUserBasic
             // 
-            基础信息ToolStripMenuItem.Name = "基础信息ToolStripMenuItem";
-            基础信息ToolStripMenuItem.Size = new Size(124, 22);
-            基础信息ToolStripMenuItem.Text = "基础信息";
+            TsmSettingUserBasic.Name = "TsmSettingUserBasic";
+            TsmSettingUserBasic.Size = new Size(180, 22);
+            TsmSettingUserBasic.Text = "基础信息";
+            TsmSettingUserBasic.Click += TsmSettingUserBasic_Click;
             // 
             // 组织信息ToolStripMenuItem
             // 
             组织信息ToolStripMenuItem.Name = "组织信息ToolStripMenuItem";
-            组织信息ToolStripMenuItem.Size = new Size(124, 22);
+            组织信息ToolStripMenuItem.Size = new Size(180, 22);
             组织信息ToolStripMenuItem.Text = "组织信息";
             // 
             // 界面设置ToolStripMenuItem
             // 
             界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
-            界面设置ToolStripMenuItem.Size = new Size(124, 22);
+            界面设置ToolStripMenuItem.Size = new Size(180, 22);
             界面设置ToolStripMenuItem.Text = "界面设置";
             // 
             // Index
@@ -111,7 +101,6 @@ namespace WinFormsCS
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(toolStrip1);
-            Controls.Add(BtnTest);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Index";
             StartPosition = FormStartPosition.CenterScreen;
@@ -124,13 +113,11 @@ namespace WinFormsCS
         }
 
         #endregion
-
-        private Button BtnTest;
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButton1;
         private ToolStripSplitButton toolStripDropDownButton1;
         private ToolStripMenuItem 用户设置ToolStripMenuItem;
-        private ToolStripMenuItem 基础信息ToolStripMenuItem;
+        private ToolStripMenuItem TsmSettingUserBasic;
         private ToolStripMenuItem 组织信息ToolStripMenuItem;
         private ToolStripMenuItem 界面设置ToolStripMenuItem;
 

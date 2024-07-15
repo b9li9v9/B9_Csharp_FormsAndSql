@@ -14,8 +14,9 @@ namespace WinFormsCS
             GP.Instances.login = new Login();
             GP.Instances.index = new Index();
             GP.Instances.signUp = new SignUp();
-            GP.Instances.setting = new Setting();
+            GP.Instances.settingUserBasic = new SettingUserBasic();
             GP.Instances.sqlControl = new SqlControl();
+            GP.Instances.uiManager = new UIManager();
             Application.Run(GP.Instances.login);
         }
     }

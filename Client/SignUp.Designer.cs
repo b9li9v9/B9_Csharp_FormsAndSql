@@ -51,7 +51,7 @@
             RbMan = new RadioButton();
             RbWoman = new RadioButton();
             label9 = new Label();
-            TbOrganization = new TextBox();
+            TbOrganizationID = new TextBox();
             label10 = new Label();
             SuspendLayout();
             // 
@@ -223,6 +223,7 @@
             // RbMan
             // 
             RbMan.AutoSize = true;
+            RbMan.Checked = true;
             RbMan.Location = new Point(162, 231);
             RbMan.Name = "RbMan";
             RbMan.Size = new Size(50, 21);
@@ -238,7 +239,6 @@
             RbWoman.Name = "RbWoman";
             RbWoman.Size = new Size(50, 21);
             RbWoman.TabIndex = 24;
-            RbWoman.TabStop = true;
             RbWoman.Text = "女性";
             RbWoman.UseVisualStyleBackColor = true;
             // 
@@ -252,29 +252,29 @@
             label9.TabIndex = 25;
             label9.Text = "昵称";
             // 
-            // TbOrganization
+            // TbOrganizationID
             // 
-            TbOrganization.Location = new Point(162, 144);
-            TbOrganization.Name = "TbOrganization";
-            TbOrganization.Size = new Size(156, 23);
-            TbOrganization.TabIndex = 28;
+            TbOrganizationID.Location = new Point(162, 144);
+            TbOrganizationID.Name = "TbOrganizationID";
+            TbOrganizationID.Size = new Size(156, 23);
+            TbOrganizationID.TabIndex = 28;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label10.Location = new Point(98, 146);
+            label10.Location = new Point(66, 144);
             label10.Name = "label10";
-            label10.Size = new Size(58, 21);
+            label10.Size = new Size(90, 21);
             label10.TabIndex = 27;
-            label10.Text = "组织：";
+            label10.Text = "组织编号：";
             // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(419, 382);
-            Controls.Add(TbOrganization);
+            Controls.Add(TbOrganizationID);
             Controls.Add(label10);
             Controls.Add(TbNickName);
             Controls.Add(label9);
@@ -330,7 +330,7 @@
         internal RadioButton RbWoman;
         internal TextBox TbNickName;
         internal Label label9;
-        internal TextBox TbOrganization;
+        internal TextBox TbOrganizationID;
         internal Label label10;
     }
     }

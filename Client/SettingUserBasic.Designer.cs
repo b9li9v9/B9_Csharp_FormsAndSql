@@ -1,6 +1,6 @@
 ﻿namespace WinFormsCS
 {
-    partial class Setting
+    partial class SettingUserBasic
     {
         /// <summary>
         /// Required designer variable.
@@ -35,21 +35,21 @@
             Btnabc = new Button();
             TbVerify = new TextBox();
             label7 = new Label();
-            label8 = new Label();
-            label5 = new Label();
+            LbBirthday = new Label();
+            LbSex = new Label();
             TbReadName = new TextBox();
-            label6 = new Label();
+            LbReadName = new Label();
             TbPhoneNumber = new TextBox();
-            label3 = new Label();
+            LbPhoneNumber = new Label();
             TbMailbox = new TextBox();
-            label4 = new Label();
+            LbEmailBox = new Label();
             TbPassword = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
+            LbPassWord = new Label();
+            LbNickName = new Label();
             BtnDelete = new Button();
             TbNickName = new TextBox();
-            TbOrganization = new TextBox();
-            label9 = new Label();
+            TbOrganizationID = new TextBox();
+            LbOrganization = new Label();
             SuspendLayout();
             // 
             // RbWoman
@@ -59,7 +59,6 @@
             RbWoman.Name = "RbWoman";
             RbWoman.Size = new Size(50, 21);
             RbWoman.TabIndex = 43;
-            RbWoman.TabStop = true;
             RbWoman.Text = "女性";
             RbWoman.UseVisualStyleBackColor = true;
             // 
@@ -70,7 +69,6 @@
             RbMan.Name = "RbMan";
             RbMan.Size = new Size(50, 21);
             RbMan.TabIndex = 42;
-            RbMan.TabStop = true;
             RbMan.Text = "男性";
             RbMan.UseVisualStyleBackColor = true;
             // 
@@ -118,25 +116,25 @@
             label7.TabIndex = 37;
             label7.Text = "验证码：";
             // 
-            // label8
+            // LbBirthday
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label8.Location = new Point(83, 236);
-            label8.Name = "label8";
-            label8.Size = new Size(90, 21);
-            label8.TabIndex = 36;
-            label8.Text = "出生日期：";
+            LbBirthday.AutoSize = true;
+            LbBirthday.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbBirthday.Location = new Point(83, 236);
+            LbBirthday.Name = "LbBirthday";
+            LbBirthday.Size = new Size(90, 21);
+            LbBirthday.TabIndex = 36;
+            LbBirthday.Text = "出生日期：";
             // 
-            // label5
+            // LbSex
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label5.Location = new Point(115, 205);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 21);
-            label5.TabIndex = 35;
-            label5.Text = "性别：";
+            LbSex.AutoSize = true;
+            LbSex.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbSex.Location = new Point(115, 205);
+            LbSex.Name = "LbSex";
+            LbSex.Size = new Size(58, 21);
+            LbSex.TabIndex = 35;
+            LbSex.Text = "性别：";
             // 
             // TbReadName
             // 
@@ -145,15 +143,15 @@
             TbReadName.Size = new Size(156, 23);
             TbReadName.TabIndex = 34;
             // 
-            // label6
+            // LbReadName
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label6.Location = new Point(83, 144);
-            label6.Name = "label6";
-            label6.Size = new Size(90, 21);
-            label6.TabIndex = 33;
-            label6.Text = "真实姓名：";
+            LbReadName.AutoSize = true;
+            LbReadName.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbReadName.Location = new Point(83, 144);
+            LbReadName.Name = "LbReadName";
+            LbReadName.Size = new Size(90, 21);
+            LbReadName.TabIndex = 33;
+            LbReadName.Text = "真实姓名：";
             // 
             // TbPhoneNumber
             // 
@@ -162,15 +160,15 @@
             TbPhoneNumber.Size = new Size(156, 23);
             TbPhoneNumber.TabIndex = 32;
             // 
-            // label3
+            // LbPhoneNumber
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label3.Location = new Point(83, 115);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 21);
-            label3.TabIndex = 31;
-            label3.Text = "手机号码：";
+            LbPhoneNumber.AutoSize = true;
+            LbPhoneNumber.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbPhoneNumber.Location = new Point(83, 115);
+            LbPhoneNumber.Name = "LbPhoneNumber";
+            LbPhoneNumber.Size = new Size(90, 21);
+            LbPhoneNumber.TabIndex = 31;
+            LbPhoneNumber.Text = "手机号码：";
             // 
             // TbMailbox
             // 
@@ -179,15 +177,15 @@
             TbMailbox.Size = new Size(156, 23);
             TbMailbox.TabIndex = 30;
             // 
-            // label4
+            // LbEmailBox
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label4.Location = new Point(115, 86);
-            label4.Name = "label4";
-            label4.Size = new Size(58, 21);
-            label4.TabIndex = 29;
-            label4.Text = "邮箱：";
+            LbEmailBox.AutoSize = true;
+            LbEmailBox.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbEmailBox.Location = new Point(115, 86);
+            LbEmailBox.Name = "LbEmailBox";
+            LbEmailBox.Size = new Size(58, 21);
+            LbEmailBox.TabIndex = 29;
+            LbEmailBox.Text = "邮箱：";
             // 
             // TbPassword
             // 
@@ -197,25 +195,25 @@
             TbPassword.Size = new Size(156, 23);
             TbPassword.TabIndex = 28;
             // 
-            // label2
+            // LbPassWord
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label2.Location = new Point(115, 57);
-            label2.Name = "label2";
-            label2.Size = new Size(58, 21);
-            label2.TabIndex = 27;
-            label2.Text = "密码：";
+            LbPassWord.AutoSize = true;
+            LbPassWord.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbPassWord.Location = new Point(115, 57);
+            LbPassWord.Name = "LbPassWord";
+            LbPassWord.Size = new Size(58, 21);
+            LbPassWord.TabIndex = 27;
+            LbPassWord.Text = "密码：";
             // 
-            // label1
+            // LbNickName
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label1.Location = new Point(115, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 21);
-            label1.TabIndex = 25;
-            label1.Text = "昵称：";
+            LbNickName.AutoSize = true;
+            LbNickName.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbNickName.Location = new Point(115, 28);
+            LbNickName.Name = "LbNickName";
+            LbNickName.Size = new Size(58, 21);
+            LbNickName.TabIndex = 25;
+            LbNickName.Text = "昵称：";
             // 
             // BtnDelete
             // 
@@ -234,30 +232,30 @@
             TbNickName.Size = new Size(156, 23);
             TbNickName.TabIndex = 45;
             // 
-            // TbOrganization
+            // TbOrganizationID
             // 
-            TbOrganization.Location = new Point(179, 171);
-            TbOrganization.Name = "TbOrganization";
-            TbOrganization.Size = new Size(156, 23);
-            TbOrganization.TabIndex = 47;
+            TbOrganizationID.Location = new Point(179, 171);
+            TbOrganizationID.Name = "TbOrganizationID";
+            TbOrganizationID.Size = new Size(156, 23);
+            TbOrganizationID.TabIndex = 47;
             // 
-            // label9
+            // LbOrganization
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            label9.Location = new Point(115, 173);
-            label9.Name = "label9";
-            label9.Size = new Size(58, 21);
-            label9.TabIndex = 46;
-            label9.Text = "组织：";
+            LbOrganization.AutoSize = true;
+            LbOrganization.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            LbOrganization.Location = new Point(83, 173);
+            LbOrganization.Name = "LbOrganization";
+            LbOrganization.Size = new Size(90, 21);
+            LbOrganization.TabIndex = 46;
+            LbOrganization.Text = "组织编号：";
             // 
-            // Setting
+            // SettingUserBasic
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(419, 347);
-            Controls.Add(TbOrganization);
-            Controls.Add(label9);
+            Controls.Add(TbOrganizationID);
+            Controls.Add(LbOrganization);
             Controls.Add(TbNickName);
             Controls.Add(BtnDelete);
             Controls.Add(RbWoman);
@@ -267,21 +265,21 @@
             Controls.Add(Btnabc);
             Controls.Add(TbVerify);
             Controls.Add(label7);
-            Controls.Add(label8);
-            Controls.Add(label5);
+            Controls.Add(LbBirthday);
+            Controls.Add(LbSex);
             Controls.Add(TbReadName);
-            Controls.Add(label6);
+            Controls.Add(LbReadName);
             Controls.Add(TbPhoneNumber);
-            Controls.Add(label3);
+            Controls.Add(LbPhoneNumber);
             Controls.Add(TbMailbox);
-            Controls.Add(label4);
+            Controls.Add(LbEmailBox);
             Controls.Add(TbPassword);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "Setting";
+            Controls.Add(LbPassWord);
+            Controls.Add(LbNickName);
+            Name = "SettingUserBasic";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Setting";
-            FormClosing += Setting_FormClosing;
+            FormClosing += SettingUserBasic_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -295,20 +293,20 @@
         internal Button Btnabc;
         internal TextBox TbVerify;
         internal Label label7;
-        internal Label label8;
-        internal Label label5;
+        internal Label LbBirthday;
+        internal Label LbSex;
         internal TextBox TbReadName;
-        internal Label label6;
+        internal Label LbReadName;
         internal TextBox TbPhoneNumber;
-        internal Label label3;
+        internal Label LbPhoneNumber;
         internal TextBox TbMailbox;
-        internal Label label4;
+        internal Label LbEmailBox;
         internal TextBox TbPassword;
-        internal Label label2;
-        internal Label label1;
+        internal Label LbPassWord;
+        internal Label LbNickName;
         internal Button BtnDelete;
         internal TextBox TbNickName;
-        internal TextBox TbOrganization;
-        internal Label label9;
+        internal TextBox TbOrganizationID;
+        internal Label LbOrganization;
     }
 }

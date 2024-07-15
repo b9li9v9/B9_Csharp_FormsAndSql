@@ -18,6 +18,8 @@ namespace WinFormsCS
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             GP.Instances.sqlControl.LoginForm_VerifyLogin();
+            //GP.Instances.uiManager.FormSwitch(GP.Instances.index);
+
         }
 
 
@@ -34,7 +36,7 @@ namespace WinFormsCS
         {
             //GP.Instances.signUp.Show();
             //GP.Instances.login.Hide();
-            GP.Instances.FormSwitch(GP.Instances.signUp);
+            GP.Instances.uiManager.FormSwitch(GP.Instances.signUp);
         }
     }
 }

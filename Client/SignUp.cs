@@ -29,7 +29,7 @@ namespace WinFormsCS
         {
             //GP.Instances.signUp.Hide();
             //GP.Instances.login.Show();
-            GP.Instances.FormSwitch(GP.Instances.login);
+            GP.Instances.uiManager.FormSwitch(GP.Instances.login);
         }
 
 
@@ -53,6 +53,7 @@ namespace WinFormsCS
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
             GP.Instances.sqlControl.SignUpForm_SignUpAccount();
+            GP.Instances.uiManager.FormSwitch(GP.Instances.login);
         }
     }
 }

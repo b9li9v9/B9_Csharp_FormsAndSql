@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace WinFormsCS
 {
-    public partial class Setting : Form
+    public partial class SettingUserBasic : Form
     {
-        public Setting()
+        public SettingUserBasic()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace WinFormsCS
 
         }
 
-        private void Setting_FormClosing(object sender, FormClosingEventArgs e)
+        private void SettingUserBasic_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
@@ -37,13 +37,15 @@ namespace WinFormsCS
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             GP.Instances.sqlControl.SettingForm_DeleteAccount();
+            GP.Instances.uiManager.FormSwitch(GP.Instances.login);
+
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             //GP.Instances.setting.Hide();
             //GP.Instances.index.Show();
-            GP.Instances.FormSwitch(GP.Instances.index);
+            GP.Instances.uiManager.FormSwitch(GP.Instances.index);
         }
 
 

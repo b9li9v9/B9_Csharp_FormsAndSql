@@ -39,17 +39,17 @@ namespace WinFormsCS
             Application.Exit();
         }
 
-        private void IndexBtnTest_Click(object sender, EventArgs e)
-        {
-            //GP.Instances.setting.Show();
-            //GP.Instances.index.Hide();
-            GP.Instances.FormSwitch(GP.Instances.setting);
-        }
+
 
         private void toolStrip1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION,0);
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
+        }
+
+        private void TsmSettingUserBasic_Click(object sender, EventArgs e)
+        {
+            GP.Instances.uiManager.SettingUserBasicInit();
         }
     }
 }
